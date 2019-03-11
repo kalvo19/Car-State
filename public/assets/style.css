@@ -1,3 +1,10 @@
+body{
+    background-image: url(../assets/images/textura\ garaje.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vmax;
+    
+    
+}
 .gear{
     position: absolute;
     width: 84px;
