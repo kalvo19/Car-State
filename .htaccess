@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    # Permite utilizar la directiva RewriteRule de abajo
+    RewriteEngine On
+
+    # Al acceder al root del proyecto se redirecciona al directorio '/public'
+    RewriteRule ^$ public/ [L]
+
+    RewriteRule ^(\w+)/?$ public/index.php?controller=$1&action=index
+
+    RewriteRule ^?(.*)$ public/?controller=$1&action=$2
+</IfModule>
