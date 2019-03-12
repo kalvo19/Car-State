@@ -12,8 +12,8 @@ class Pages extends Controller {
     * ------------------------------   PROPIEDADES DE LA CLASE   ------------------------------
     */
 
-    public function home() {
-        parent::vista('home', $data = []);
+    public function index() {
+        parent::vista('index', $data = []);
     }
 
     public function usuarios() {

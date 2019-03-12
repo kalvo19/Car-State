@@ -15,8 +15,8 @@ class Controller {
 
     public function vista($vista) {
         echo $vista;
-        if (file_exists('../app/views/pages/' . $vista . '.php')) {
-            require_once '../app/views/pages/' . $vista . '.php';
+        if (file_exists('../app/views/pages/' . $vista . '.html')) {
+            require_once '../app/views/pages/' . $vista . '.html';
         }
 
         die('No existe la página');

@@ -8,7 +8,7 @@
 
 class Core {
     protected $controladorActual = 'Pages';
-    protected $metodoActual = 'home';
+    protected $metodoActual = 'index';
     protected $parametros = [];
 
     public function __construct() {
