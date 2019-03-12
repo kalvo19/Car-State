@@ -8,8 +8,8 @@
 
 class Users extends Controller {
 
-    public function home() {
-        parent::modelo();
+    public function index() {
+        parent::modelo('User');
         parent::vista('users');
     }
 

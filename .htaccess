@@ -5,5 +5,5 @@
     # Al acceder al root del proyecto se redirecciona al directorio '/public'
     RewriteRule ^$ public/ [L]
 
-
+    RewriteRule ^([a-z]+)$ public/?url=$1 [L]
 </IfModule>

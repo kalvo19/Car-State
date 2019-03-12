@@ -14,7 +14,7 @@ class Core {
     public function __construct() {
         $url = $this->getUrl();
 
-        if (file_exists('..app/controllers/' . ucwords($url[0]))) {
+        if (file_exists('../app/controllers/' . ucwords($url[0]) . '.php')) {
             $this->__set('controladorActual', ucwords($url[0]));
             unset($url[0]);
         }
