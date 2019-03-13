@@ -16,7 +16,7 @@ class Pages extends Controller {
         parent::vista('index', $data = []);
     }
 
-    public function usuarios() {
-        parent::vista('usuarios', $data = []);
+    public function usuers() {
+        parent::vista('users', $data = []);
     }
 }

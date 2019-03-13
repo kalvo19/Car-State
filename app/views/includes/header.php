@@ -1,3 +1,12 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: meinsusseichhornchen
+ * Date: 13/03/19
+ * Time: 16:45
+ */
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,25 +16,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
+          crossorigin="anonymous">
     <link rel="stylesheet" href="./public/assets/style.css" type="text/css">
     <title>CarStory</title>
 </head>
-
 <body>
-    <header>
-        <img class="gear" src="./public/assets/images/gear.png" alt="Logo de CarStory">
-        <div class="poligonb">
-            <h1>CarStory</h1>
-        </div>
-
-        <div class="poligona">
-            <div class="menu">
-                <h3>MENU</h3>
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </header>
-</body>
-
-</html>

@@ -9,7 +9,6 @@
 class Users extends Controller {
 
     public function index() {
-        parent::modelo('User');
         parent::vista('users');
     }
 

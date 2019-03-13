@@ -6,4 +6,4 @@
  * Time: 15:17
  */
 
-echo $data->nombre;
+echo RUTA_DE_LA_APLICACION;

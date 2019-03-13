@@ -11,15 +11,17 @@ class Controller {
         if (file_exists('../app/models/' . $modelo . '.php')) {
             require_once '../app/models/' . $modelo . '.php';
         }
+
+        return new $modelo();
     }
 
     public function vista($vista) {
         echo $vista;
-        if (file_exists('../app/views/pages/' . $vista . '.html')) {
-            require_once '../app/views/pages/' . $vista . '.html';
+        if (file_exists('../app/views/pages/' . $vista . '.php')) {
+            require_once '../app/views/pages/' . $vista . '.php';
+        } else {
+            die('No existe la página');
         }
-
-        die('No existe la página');
     }
 
 }
