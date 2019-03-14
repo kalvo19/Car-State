@@ -8,6 +8,7 @@
 
 namespace User;
 
+require_once '../app/libraries/BBDD.php';
 
 class User extends BBDD {
     /*
@@ -16,16 +17,16 @@ class User extends BBDD {
 
     private $nombre = '';
     private $correo = '';
-    private $contraseña = '';
+    private $password = '';
 
     /*
      * ------------------------------   CONSTRUCTOR DE LA CLASE   ------------------------------
      */
 
-    public function __construct($nombre, $correo, $contraseña) {
+    public function __construct($nombre, $correo, $password) {
         $this->nombre = $nombre;
         $this->correo = $correo;
-        $this->contraseña = $contraseña;
+        $this->contraseña = $password;
     }
 
     /*
@@ -56,6 +57,12 @@ class User extends BBDD {
 
     public function __destruct() {
         // TODO: Implement __destruct() method.
+    }
+
+    public function listarUsuarios() {
+        $consulta = "SELECT * FROM users;";
+        $conexion = new BBDD();
+        $conexion->seleccionarDatos($consulta);
     }
 
 }

@@ -9,7 +9,8 @@
 class Users extends Controller {
 
     public function index() {
+        $usuario = $this->modelo('User');
+        $usuario->listarUsuarios();
         parent::vista('users');
     }
-
 }
