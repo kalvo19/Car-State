@@ -1,5 +1,4 @@
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-ºº++++++<?php
+<?php
 /**
  * Created by PhpStorm.
  * User: meinsusseichhornchen
@@ -7,7 +6,7 @@
  * Time: 19:10
  */
 
-class BBDD {
+class bbdd {
 
     private $conexion = '';
 
@@ -26,6 +25,8 @@ class BBDD {
     private function seleccionarDatos($consulta) {
         $statement = $this->conexion->prepare($consulta);
         $this->conexion->exec($statement);
+        $resultadoConsulta = $statement->fetchAll();
+        print_r($resultadoConsulta);
     }
 
 }

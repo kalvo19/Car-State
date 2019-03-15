@@ -8,9 +8,9 @@
 
 namespace User;
 
-require_once '../app/libraries/BBDD.php';
+require_once '../app/libraries/bbdd.php';
 
-class User extends BBDD {
+class User extends bbdd {
     /*
      * ------------------------------   PROPIEDADES DE LA CLASE   ------------------------------
      */
@@ -56,7 +56,7 @@ class User extends BBDD {
      */
 
     public function __destruct() {
-        // TODO: Implement __destruct() method.
+
     }
 
     public function listarUsuarios() {
