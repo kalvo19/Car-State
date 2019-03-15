@@ -86,3 +86,10 @@ h1 {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%); 
 } 
+.login{
+    position: relative
+}
+.login input{
+    background-color: #526164;
+    border: 0px;
+}

@@ -6,6 +6,9 @@
     // Incluye la cabecera del sitio web.
     include_once('../app/views/components/header.php');
 
+    // Incluye formulario de login.
+    include_once('../app/views/components/login.php');
+
     // Incluye el pie de página que nos permite añadir etiquetas
     include_once('../app/views/includes/footer.php');
 ?>
