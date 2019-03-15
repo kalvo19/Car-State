@@ -1,12 +1,16 @@
+<div>
+    <h4 class="info">Mantén el control de las tareas de tu coche</h4>
+    <h4 class="intro">CREA O ENTRA EN TU GARAJE</h4>
+</div>
+
+
 <div class="login">
     <form action="userLogin.php" method="POST">
         <div>
-            <label for="user">Usuario</label>
-            <input type="text" name='user'>
+            <input type="text" value="Usuario" name='user'>
         </div>
         <div>
-            <label for="password">Contraseña</label>
-            <input type="password" name='passsword'>
+            <input type="text" value="Contraseña" name='passsword'>
         </div>
         <div>
             <button type="submit" name="button">Entrar</button>
