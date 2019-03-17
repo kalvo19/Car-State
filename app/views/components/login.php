@@ -9,6 +9,8 @@
         <div>
             <input type="text" value="Usuario" name='user'>
         </div>
+        <br>
+        <br>
         <div>
             <input type="text" value="Contraseña" name='passsword'>
         </div>
