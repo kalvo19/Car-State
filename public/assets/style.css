@@ -1,3 +1,4 @@
+* {margin:0; padding:0}
 body{
     background-image: url(../assets/images/textura\ garaje.jpg);
     background-repeat: no-repeat;
@@ -86,3 +87,106 @@ h1 {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%); 
 } 
+.welcome{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.info{
+    margin: 0 auto;
+    width: 40vh;
+    margin-bottom: 50px;
+
+    font-family: Encode Sans Expanded;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: normal;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.intro{
+    margin: 0 auto;
+    width: 40vh;
+    
+
+    font-family: Encode Sans Expanded;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 27px;
+    letter-spacing: 0.2em;
+    text-decoration-line: underline;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.login{
+    
+    display: flex;
+    
+    
+}
+
+.login form{
+    margin: 0 auto;
+    
+}
+
+.login form * {
+    margin: 4 auto;
+}
+
+.login form ::placeholder {
+    color: white;
+}
+
+.login input{
+    
+    background: linear-gradient(0deg, #7E959B 0%, rgba(0, 0, 0, 0.2) 100%), #7E959B;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+    
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 41px;
+    
+    font-family: Encode Sans Expanded;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: normal;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 1px 7px #000000;
+
+    
+}
+
+.entar{
+    
+    background: linear-gradient(180deg, #6CB356 0%, #6CB356 13.81%, rgba(94, 194, 64, 0.970135) 70.72%, rgba(94, 194, 64, 0.969072) 98.34%), #5EC240;
+    border-radius: 5px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    
+
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 41px;
+
+    font-family: Encode Sans Expanded;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: normal;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 1px 7px #000000;
+}
+
