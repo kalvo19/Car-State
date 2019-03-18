@@ -9,7 +9,7 @@
 // Ruta absoluta desde donde esta el 'index.php'
 define('RUTA_DE_LA_APLICACION', dirname(__DIR__));
 
-define('USUARIO_ROOT_BASE_DE_DATOS', 'root');
+define('USUARIO_BASE_DE_DATOS', 'kalvo19');
 define('HOST_SERVIDOR_MYSQL', 'localhost');
-define('CONTRASEÑA_BASE_DE_DATOS', '');
+define('CONTRASEÑA_BASE_DE_DATOS', '123456');
 define('NOMBRE_BASE_DE_DATOS', 'carstory');

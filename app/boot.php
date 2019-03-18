@@ -10,9 +10,9 @@
 // a la hora de gestionar las redirecciones a las diferentes páginas.
 require_once '../app/config/config.php';
 
-// Importa la clase 'bbdd.php' que contiene los métodos que permiten conectarse a la base
+// Importa la clase 'BBDD.php' que contiene los métodos que permiten conectarse a la base
 // de datos.
-require_once '../app/libraries/bbdd.php';
+require_once '../app/libraries/BBDD.php';
 
 // Importa la clase 'Controller.php' que contiene los métodos que permiten cargar las vistas
 // (páginas que el usuario va a visualizar) para que los controladores del directorio '/controllers'

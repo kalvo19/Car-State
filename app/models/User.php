@@ -6,11 +6,7 @@
  * Time: 18:58
  */
 
-namespace User;
-
-require_once '../app/libraries/bbdd.php';
-
-class User extends bbdd {
+class User extends BBDD {
     /*
      * ------------------------------   PROPIEDADES DE LA CLASE   ------------------------------
      */
@@ -19,11 +15,13 @@ class User extends bbdd {
     private $correo = '';
     private $password = '';
 
+    private $connexion = '';
+
     /*
      * ------------------------------   CONSTRUCTOR DE LA CLASE   ------------------------------
      */
 
-    public function __construct($nombre, $correo, $password) {
+    public function __construct($nombre = '', $correo = '', $password = '') {
         $this->nombre = $nombre;
         $this->correo = $correo;
         $this->contraseña = $password;
@@ -60,9 +58,11 @@ class User extends bbdd {
     }
 
     public function listarUsuarios() {
-        $consulta = "SELECT * FROM users;";
-        $conexion = new BBDD();
-        $conexion->seleccionarDatos($consulta);
+        $consulta = "SELECT * FROM usuarios;";
+        $this->connexion = new BBDD();
+        $this->connexion->consulta($consulta);
+        $resultado = $this->connexion->obtenerMultiplesFilas();
+        return $resultado;
     }
 
 }

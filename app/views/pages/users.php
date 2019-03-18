@@ -6,4 +6,6 @@
  * Time: 15:17
  */
 
-echo RUTA_DE_LA_APLICACION;
+require_once '../app/views/includes/header.php';
+
+require_once '../app/views/includes/footer.php';

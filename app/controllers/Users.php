@@ -6,11 +6,15 @@
  * Time: 16:44
  */
 
+
+
 class Users extends Controller {
 
     public function index() {
         $usuario = $this->modelo('User');
-        $usuario->listarUsuarios();
-        parent::vista('users');
+        $listaUsuarios = $usuario->listarUsuarios();
+        $data = [];
+        array_push($data, $listaUsuarios);
+        $this->vista('users', $data);
     }
 }
