@@ -33,7 +33,7 @@ class BBDD {
 
     public function obtenerMultiplesFilas() {
         $this->ejecutarConsulta();
-        $resultadoConsulta = $this->statement->fetchAll();
+        $resultadoConsulta = $this->statement->fetchAll(PDO::FETCH_OBJ);
         return $resultadoConsulta;
     }
 

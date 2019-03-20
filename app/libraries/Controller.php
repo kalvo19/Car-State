@@ -15,13 +15,18 @@ class Controller {
         return new $modelo();
     }
 
-    public function vista($vista) {
-        echo $vista;
+    public function vista($vista, $data = []) {
         if (file_exists('../app/views/pages/' . $vista . '.php')) {
             require_once '../app/views/pages/' . $vista . '.php';
         } else {
             die('No existe la página');
         }
+    }
+
+    public function prepararDatos($datos) {
+        $data = [];
+        array_push($data, $datos);
+        return $data;
     }
 
 }

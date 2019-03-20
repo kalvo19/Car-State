@@ -6,15 +6,16 @@
  * Time: 16:44
  */
 
-
+require_once '../app/libraries/Controller.php';
 
 class Users extends Controller {
+
 
     public function index() {
         $usuario = $this->modelo('User');
         $listaUsuarios = $usuario->listarUsuarios();
-        $data = [];
-        array_push($data, $listaUsuarios);
+        $data['usuarios'] = $this->prepararDatos($listaUsuarios);
         $this->vista('users', $data);
     }
+
 }

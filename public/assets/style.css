@@ -3,7 +3,7 @@ body{
     background-image: url(../assets/images/textura\ garaje.jpg);
     background-repeat: no-repeat;
     background-size: 100vmax;
-    
+    font-family: Encode Sans Expanded;
     
 }
 .gear{
@@ -56,7 +56,7 @@ body{
     font-size: 30px;
 } 
 
-h1 {
+h1.logo {
     width: 5em;
     height: 1em;
     
@@ -166,7 +166,7 @@ h1 {
     
 }
 
-.entar{
+.entrar{
     
     background: linear-gradient(180deg, #6CB356 0%, #6CB356 13.81%, rgba(94, 194, 64, 0.970135) 70.72%, rgba(94, 194, 64, 0.969072) 98.34%), #5EC240;
     border-radius: 5px;
@@ -190,3 +190,89 @@ h1 {
     text-shadow: 0px 1px 7px #000000;
 }
 
+/* ------------------------ INICIO usersList.php ------------------------ */
+
+.user-list {
+    background: linear-gradient(180deg, #526164 0%, rgba(80, 104, 109, 0.403315) 59.67%, rgba(162, 178, 182, 0) 100%), #526164;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.list-item {
+    padding: 20px;
+    background: linear-gradient(180deg, #7E959B 0%, rgba(0, 0, 0, 0.2) 100%), #7E959B;
+    margin: 10px;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+/* ------------------------ FINAL usersList.php ------------------------ */
+
+
+
+/* ------------------------ INICIO register.php ------------------------ */
+
+h1 {
+    letter-spacing: 0.27em;
+    color: whitesmoke;
+    font-size: 20px;
+    text-align: center;
+}
+
+.register-form form label {
+    display: block;
+    text-align: center;
+}
+
+.register-form ::placeholder {
+    color: whitesmoke;
+    text-shadow: 0px 0px 7px rgba(0,0,0,1);
+}
+
+.register-form span {
+    width: 100%;
+    height: 100px;
+}
+
+.register-form span:before {
+    content: ' ';
+    position: relative;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%), #FFFFFF;
+    display: block;
+    padding: 15px;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+    top: 54px;
+    z-index: -1;
+}
+
+.register-form input {
+    font-family: Encode Sans Expanded;
+    width: 80%;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    background: linear-gradient(180deg, #7E959B 0%, rgba(0, 0, 0, 0.2) 100%), #7E959B;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: whitesmoke;
+    text-shadow: 0px 0px 7px rgba(0,0,0,1);
+}
+
+.register-form input:focus {
+    background: #7E959B;
+    text-shadow: none;
+    color: whitesmoke;
+}
+
+
+.register-form .entrar {
+    margin: 13px auto;
+}
+
+
+
+/* ------------------------ FINAL register.php ------------------------ */

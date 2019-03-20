@@ -6,6 +6,8 @@
  * Time: 16:50
  */
 
+require_once '../app/libraries/Controller.php';
+
 class Pages extends Controller {
 
     /*
@@ -13,10 +15,14 @@ class Pages extends Controller {
     */
 
     public function index() {
-        parent::vista('index', $data = []);
+        $this->vista('index', $data = []);
     }
 
-    public function usuers() {
-        parent::vista('users', $data = []);
+    public function users() {
+        $this->vista('users', $data = []);
+    }
+
+    public function register() {
+        $this->vista('register', $data = []);
     }
 }

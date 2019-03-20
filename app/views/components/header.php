@@ -10,7 +10,7 @@
 <header>
     <img class="gear" src="./public/assets/images/gear.png" alt="Logo de CarStory">
     <div class="poligonb">
-        <h1>CarStory</h1>
+        <h1 class="logo">CarStory</h1>
     </div>
 
     <div class="poligona">

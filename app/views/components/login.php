@@ -9,12 +9,11 @@
         <div>
             <input type="text" name='user' placeholder="Usuario">
         </div>
-        
         <div>
             <input type="password" name='passsword' placeholder="Contraseña">
         </div>
         <div>
-            <button class="entar" type="submit" name="button">Entrar en el garaje</button>
+            <button class="entrar" type="submit" name="button">Entrar en el garaje</button>
         </div>
     
     </form>

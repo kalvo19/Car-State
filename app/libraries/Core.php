@@ -13,7 +13,6 @@ class Core {
 
     public function __construct() {
         $url = $this->getUrl();
-        print_r($url);
 
         if (file_exists('../app/controllers/' . ucwords($url[0]) . '.php')) {
             $this->__set('controladorActual', ucwords($url[0]));
@@ -24,9 +23,11 @@ class Core {
 
         $this->__set('controladorActual', new $this->controladorActual);
 
-        if (method_exists($this->controladorActual, $url[1])) {
-            $this->__set('metodoActual', $url[1]);
-            unset($url[1]);
+        if (isset($url[1])) {
+            if (method_exists($this->controladorActual, $url[1])) {
+                $this->__set('metodoActual', $url[1]);
+                unset($url[1]);
+            }
         }
 
         call_user_func([$this->controladorActual, $this->metodoActual], $this->__get('parametros'));
