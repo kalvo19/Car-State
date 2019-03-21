@@ -1,8 +1,9 @@
 * {margin:0; padding:0}
-body{
+.body-login{
     background-image: url(../assets/images/textura\ garaje.jpg);
     background-repeat: no-repeat;
     background-size: 100vmax;
+    height: 100%;
     
     
 }
