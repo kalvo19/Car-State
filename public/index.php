@@ -21,3 +21,4 @@ require_once '../app/boot.php';
 // Instancia la clase 'Core', que se encarga de seleccionar el controlador correspondiente
 // a la petición recibida por el usuario.
 $init = new Core();
+

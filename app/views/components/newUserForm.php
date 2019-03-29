@@ -9,22 +9,22 @@
 ?>
 
 <div class="register-form">
-    <h1>CREA TU GARAJE</h1>
-    <form action="../app/controllers/userRegister.php" method="POST">
-        <label for="name">
-            <span><input type="name" placeholder="Nombre"></span>
+    <h1 class="register">CREA TU GARAJE</h1>
+    <form action="users" method="post">
+        <label for="nombre">
+            <span><input name="nombre" type="text" placeholder="Nombre"></span>
         </label>
-        <label for="surname">
-            <span><input type="surname" placeholder="Apellidos"></span>
+        <label for="apellidos">
+            <span><input name="apellidos" type="text" placeholder="Apellidos"></span>
         </label>
         <label for="email">
-            <span><input type="email" placeholder="Correo electrónico"></span>
+            <span><input name="email" type="email" placeholder="Correo electrónico"></span>
         </label>
-        <label for="password">
-            <span><input type="password" placeholder="Contraseña"></span>
+        <label for="contraseña">
+            <span><input name="contraseña" type="password" placeholder="Contraseña"></span>
         </label>
-        <label for="password_repeat">
-            <span><input type="password" placeholder="Repetir Contraseña"></span>
+        <label for="contraseña_repetida">
+            <span><input name="contraseña_repetida" type="password" placeholder="Repetir Contraseña"></span>
         </label>
         <button type="submit" class="entrar">Crear Garaje</button>
     </form>

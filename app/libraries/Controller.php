@@ -7,12 +7,12 @@
  */
 class Controller {
 
-    public function modelo($modelo) {
+    public function modelo($modelo, $propiedades = []) {
         if (file_exists('../app/models/' . $modelo . '.php')) {
             require_once '../app/models/' . $modelo . '.php';
         }
 
-        return new $modelo();
+        return new $modelo($propiedades);
     }
 
     public function vista($vista, $data = []) {

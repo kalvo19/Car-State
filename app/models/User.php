@@ -12,8 +12,9 @@ class User extends BBDD {
      */
 
     private $nombre = '';
-    private $correo = '';
-    private $password = '';
+    private $apellidos = '';
+    private $email = '';
+    private $contraseña = '';
 
     private $connexion = '';
 
@@ -21,10 +22,11 @@ class User extends BBDD {
      * ------------------------------   CONSTRUCTOR DE LA CLASE   ------------------------------
      */
 
-    public function __construct($nombre = '', $correo = '', $password = '') {
-        $this->nombre = $nombre;
-        $this->correo = $correo;
-        $this->contraseña = $password;
+    public function __construct($propiedades) {
+        $this->nombre = $propiedades['nombre'];
+        $this->apellidos = $propiedades['apellidos'];
+        $this->email = $propiedades['email'];
+        $this->contraseña = $propiedades['contraseña'];
     }
 
     /*
@@ -57,6 +59,19 @@ class User extends BBDD {
 
     }
 
+    public function comprobarUsuarioNuevo() {
+        $parametros = [
+            ':email' => $this->email,
+        ];
+
+        $consulta = "SELECT id_usuario,email FROM usuarios WHERE email=:email";
+        $this->connexion = new BBDD();
+        $this->connexion->consulta($consulta);
+        $this->connexion->incluirParametrosConsulta($parametros);
+        $resultado = $this->connexion->obtenerMultiplesFilas();
+        return $resultado;
+    }
+
     public function listarUsuarios() {
         $consulta = "SELECT * FROM usuarios;";
         $this->connexion = new BBDD();
@@ -65,4 +80,7 @@ class User extends BBDD {
         return $resultado;
     }
 
+    public function comprobarExistenciaUsuario() {
+
+    }
 }

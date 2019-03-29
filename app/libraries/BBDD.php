@@ -27,6 +27,14 @@ class BBDD {
         $this->statement = $this->connexion->prepare($sql);
     }
 
+    public function incluirParametrosConsulta($parametros) {
+        foreach ($parametros as $key => &$value) {
+            echo $key . ' ' . $value;
+            $this->statement->bindParam($key, $value, PDO::PARAM_STR);
+        }
+        print_r($this->statement);
+    }
+
     public function ejecutarConsulta() {
         $this->statement->execute();
     }

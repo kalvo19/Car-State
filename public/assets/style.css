@@ -1,4 +1,14 @@
 * {margin:0; padding:0}
+
+/* ------------------------ INICIO General ------------------------ */
+
+form {
+    margin: 10px;
+}
+
+/* ------------------------ FINAL General ------------------------ */
+
+
 body{
     background-image: url(../assets/images/textura\ garaje.jpg);
     background-repeat: no-repeat;
@@ -217,15 +227,22 @@ h1 {
     color: whitesmoke;
     font-size: 20px;
     text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.register {
+    margin: 20px;
 }
 
 .register-form form label {
     display: block;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .register-form ::placeholder {
-    color: whitesmoke;
+    color: white;
+    opacity: 1.0;
     text-shadow: 0px 0px 7px rgba(0,0,0,1);
 }
 
@@ -234,25 +251,11 @@ h1 {
     height: 100px;
 }
 
-.register-form span:before {
-    content: ' ';
-    position: relative;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%), #FFFFFF;
-    display: block;
-    padding: 15px;
-    height: 100%;
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 5px;
-    top: 54px;
-    z-index: -1;
-}
-
 .register-form input {
     font-family: Encode Sans Expanded;
     width: 80%;
     border-radius: 5px;
-    padding: 15px;
+    padding: 10px;
     font-size: 17px;
     border: none;
     background: linear-gradient(180deg, #7E959B 0%, rgba(0, 0, 0, 0.2) 100%), #7E959B;
@@ -270,7 +273,9 @@ h1 {
 
 
 .register-form .entrar {
-    margin: 13px auto;
+    display: block;
+    margin: 15px auto;
+    width: 80%;
 }
 
 
