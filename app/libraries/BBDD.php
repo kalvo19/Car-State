@@ -27,4 +27,8 @@ class BBDD {
         $this->conexion->exec($statement);
     }
 
+    public function añadirObjeto($objeto) {
+        // Añadir el objeto
+    }
+
 }

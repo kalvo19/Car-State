@@ -6,13 +6,13 @@
 
 
 <div class="login">
-    <form action="userLogin.php" method="POST">
+    <form action="userlogin" method="POST">
         <div>
-            <input type="text" name='user' placeholder="Usuario">
+            <input type="text" name='user' placeholder="Usuario / Email">
         </div>
         
         <div>
-            <input type="password" name='passsword' placeholder="Contraseña">
+            <input type="password" name='password' placeholder="Contraseña">
         </div>
         <div>
             <button class="entar" type="submit" name="button">Entrar en el garaje</button>

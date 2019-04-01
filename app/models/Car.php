@@ -26,3 +26,9 @@ public function insertCar(){
     $this->kmActuales = $_POST["kmActuales"];
     $this->imagen = $POST["kmActuales"]; 
 }
+
+public function añadirCoche() {
+    // Coje la información 
+    // Crea el objeto
+    // Irá a la clase BBDD.php y llamará a añadirObjeto
+}

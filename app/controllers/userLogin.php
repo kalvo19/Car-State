@@ -4,11 +4,15 @@
  * Date: 15/03/19
  * Time: 13:57
  */
-class userLogin extends Controller {
+class Userlogin extends Controller {
 
     public function index(){
 
     }
+    public function comprobarUsuario($usuario, $contraseña){
+
+    }
 }
-echo $POST ['user'];
-echo $POST ['password'];
+
+echo $_POST['user'];
+echo ' ' . $_POST['password'];

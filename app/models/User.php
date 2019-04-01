@@ -65,4 +65,6 @@ class User extends BBDD {
         $conexion->seleccionarDatos($consulta);
     }
 
+    
+
 }
